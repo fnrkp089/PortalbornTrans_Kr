@@ -1,0 +1,15 @@
+
+/* ===== Portalborn 한국어 패치 =====
+   게임 글꼴에는 한글이 없어서 한글 글자(U+AC00 등)만 맑은 고딕으로 그린다.
+   같은 이름의 글꼴을 두 번 선언: 먼저 원래 글꼴(설치돼 있으면), 그다음 한글 범위만 맑은 고딕. */
+@font-face { font-family: "Courier Prime"; src: local("Courier Prime"), local("CourierPrime-Regular"); }
+@font-face { font-family: "Courier Prime"; font-weight: 700; src: local("Courier Prime Bold"), local("CourierPrime-Bold"); }
+@font-face { font-family: "Courier New"; src: local("Courier New"), local("CourierNewPSMT"); }
+@font-face { font-family: "Courier New"; font-weight: 700; src: local("Courier New Bold"), local("CourierNewPS-BoldMT"); }
+@font-face { font-family: "Press Start 2P"; src: local("Press Start 2P"), local("PressStart2P-Regular"); }
+@font-face { font-family: "Courier Prime"; src: local("Malgun Gothic"), local("MalgunGothic"), local("맑은 고딕"); unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF; }
+@font-face { font-family: "Courier Prime"; font-weight: 700; src: local("Malgun Gothic Bold"), local("MalgunGothicBold"), local("맑은 고딕 Bold"); unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF; }
+@font-face { font-family: "Courier New"; src: local("Malgun Gothic"), local("MalgunGothic"), local("맑은 고딕"); unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF; }
+@font-face { font-family: "Courier New"; font-weight: 700; src: local("Malgun Gothic Bold"), local("MalgunGothicBold"), local("맑은 고딕 Bold"); unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF; }
+@font-face { font-family: "Press Start 2P"; src: local("Malgun Gothic Bold"), local("MalgunGothicBold"), local("맑은 고딕 Bold"); unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF; }
+:lang(ko) body { word-break: keep-all; overflow-wrap: anywhere; }
